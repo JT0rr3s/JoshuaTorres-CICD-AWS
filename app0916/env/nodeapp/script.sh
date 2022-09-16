@@ -12,7 +12,7 @@ echo -------------- Download node v16 ---------------
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 
 echo ------------------ Install node ----------------
-sudo apt-get install -y nodejs
+sudo apt-get install -y nodejs -y
 
 echo ------------------ Install npm -----------------
 sudo apt-get install npm -y
@@ -25,7 +25,7 @@ sudo a2enmod proxy
 sudo a2enmod proxy_http
 
 echo ------- Add nology Apache Proxy File -----------
-sudo cp /home/ubuntu/app-to-distribute-solution/env/nodeapp/nology-proxy.conf /etc/apache2/sites-available
+sudo cp /home/ubuntu/env/nodeapp/nology-proxy.conf /etc/apache2/sites-available
 sudo echo ls -la /etc/apache2/sites-available
 
 echo ------- Register nology Apache Proxy File ------

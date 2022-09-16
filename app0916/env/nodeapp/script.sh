@@ -25,7 +25,7 @@ sudo a2enmod proxy
 sudo a2enmod proxy_http
 
 echo ------- Add nology Apache Proxy File -----------
-sudo cp /home/ubuntu/env/nodeapp/nology-proxy.conf /etc/apache2/sites-available
+sudo cp /home/ubuntu/app-to-distribute-solution/env/nodeapp/nology-proxy.conf /etc/apache2/sites-available
 sudo echo ls -la /etc/apache2/sites-available
 
 echo ------- Register nology Apache Proxy File ------
@@ -40,6 +40,8 @@ pwd
 
 echo -------------- Install Dependancies ------------
 sudo npm install forever -g
+
+echo ------------- Install Dependancies -------------
 npm install
 
 echo -------------------- Run App -------------------

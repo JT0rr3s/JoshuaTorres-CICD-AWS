@@ -60,6 +60,6 @@ Vagrant.configure("2") do |config|
       nodeapp.vm.synced_folder "env/", "/home/vagrant/env"
     end
     nodeapp.vm.provision "shell", inline: "echo 'export DB_PATH=192.168.56.20' >> /etc/profile.d/myvars.sh", run: "always"
-    nodeapp.vm.provision "shell", path: "env/nodeapp/script.sh"
+    nodeapp.vm.provision "shell", path: "app0916/env/nodeapp/script.sh"
   end
 end

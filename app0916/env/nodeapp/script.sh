@@ -47,4 +47,4 @@ npm install
 
 echo -------------------- Run App -------------------
 sudo forever stopall
-sudo forever start index.js
+sudo forever start app0916/index.js
